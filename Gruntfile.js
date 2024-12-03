@@ -51,7 +51,7 @@ module.exports = function(grunt) {
             ]
             },
             dist: {
-                OPTIONS: {
+                options: {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
