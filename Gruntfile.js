@@ -77,16 +77,14 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     removeComments: true,
-                    collapsewhitespace: true,
+                    collapseWhitespace: true,
                 },
                 files: {
                     'prebuild/index.html': 'src/index.html'
                 }
             }
         },
-        clean: {
-            'prebuild/index.html': 'src/index.html'
-        },
+        clean: [prebuild],
         uglify: {
             target: { 
                 files: { 
